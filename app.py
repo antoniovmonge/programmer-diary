@@ -19,14 +19,6 @@ def view_entries(entries):
     for entry in entries:
             print(f"{entry['date']}\n{entry['content']}\n\n")
 
-
-entries = [
-    {'content': 'Today I started learning programming.', 'date': '01-01-2020'},
-    {'content': 'I created my first SQLite database', 'date': '02-01-2020'},
-    {'content': 'I finished writing my programming diary application.', 'date': '03-01-2020'},
-    {'content': 'Today I am going to continue learning programming', 'date': '04-01-2020'}
-]
-
 print(welcome)
 
 while (user_input := input(menu)) != '3':
@@ -36,4 +28,3 @@ while (user_input := input(menu)) != '3':
         view_entries(get_entries())
     else:
         print('Invalid option, please try again.')
-        
